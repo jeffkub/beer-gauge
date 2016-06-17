@@ -1,4 +1,4 @@
-update=6/15/2016 9:38:21 PM
+update=6/16/2016 11:17:16 PM
 version=1
 last_client=kicad
 [pcbnew]
@@ -60,3 +60,14 @@ LibName28=contrib
 LibName29=valves
 LibName30=library/TEENSY_3.2
 LibName31=library/OLED_MODULE
+LibName32=library/touch_pad
+[schematic_editor]
+version=1
+PageLayoutDescrFile=
+PlotDirectoryName=
+SubpartIdSeparator=0
+SubpartFirstId=65
+NetFmtName=
+SpiceForceRefPrefix=0
+SpiceUseNetNumbers=0
+LabSize=60
