@@ -1,0 +1,9 @@
+(module PadVia (layer F.Cu) (tedit 5768AFC2)
+  (fp_text reference REF** (at 0 2) (layer F.SilkS) hide
+    (effects (font (size 1 1) (thickness 0.15)))
+  )
+  (fp_text value PadVia (at 0 -2) (layer F.Fab) hide
+    (effects (font (size 1 1) (thickness 0.15)))
+  )
+  (pad 1 thru_hole circle (at 0 0) (size 0.6096 0.6096) (drill 0.3302) (layers *.Cu *.Mask))
+)
