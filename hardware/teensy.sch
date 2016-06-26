@@ -990,4 +990,8 @@ Wire Wire Line
 	4900 3650 4950 3650
 Wire Wire Line
 	4950 3650 4950 3550
+Text Label 4400 3050 0    60   ~ 0
+USB_D-
+Text Label 4400 3150 0    60   ~ 0
+USB_D+
 $EndSCHEMATC
