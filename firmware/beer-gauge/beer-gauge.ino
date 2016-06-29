@@ -2,6 +2,8 @@
 #include <Adafruit_GFX.h>
 #include <gfxfont.h>
 
+#include "ADS1234.h"
+
 #define LED         13
 
 #define BUZZER       6
@@ -27,6 +29,7 @@
 #define TOUCH_COM   25
 
 Adafruit_SSD1305 display(DISP_RESET);
+ADS1234 scale_adc(SCALE_DOUT, SCALE_SCLK, SCALE_PDWN, SCALE_GAIN0, SCALE_GAIN1, SCALE_SPEED, SCALE_A0, SCALE_A1);
 
 void setup()
 {
@@ -36,6 +39,8 @@ void setup()
   display.begin();
   display.display();
 
+  scale_adc.init();
+
   return;
 }
 
@@ -44,6 +49,10 @@ void loop()
   int touchVal;
   
   touchVal = touchRead(TOUCH_ENTER);
+
+  Serial.print(touchVal);
+
+  delay(1000);
   
   return;
 }
