@@ -39,7 +39,7 @@ void setup()
   display.begin();
   display.display();
 
-  scale_adc.init();
+  scale_adc.init(ADS1234::GAIN128);
 
   return;
 }
