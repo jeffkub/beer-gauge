@@ -1,8 +1,11 @@
+#include <limits.h>
+
 #include <Adafruit_SSD1305.h>
 #include <Adafruit_GFX.h>
 #include <gfxfont.h>
 
 #include "ADS1234.h"
+#include "pitches.h"
 
 #define LED         13
 
@@ -41,16 +44,21 @@ void setup()
 
   scale_adc.init(ADS1234::GAIN128);
 
+  tone(BUZZER, NOTE_C4, 250);
+  
   return;
 }
 
 void loop()
 {
-  int touchVal;
+  int touchval;
+  int32_t scaleval;
   
-  touchVal = touchRead(TOUCH_ENTER);
+  touchval = touchRead(TOUCH_ENTER);
+  scaleval = scale_adc.read();
 
-  Serial.print(touchVal);
+  Serial.print(touchval);
+  Serial.print(scaleval);
 
   delay(1000);
   

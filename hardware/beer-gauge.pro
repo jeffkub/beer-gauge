@@ -1,4 +1,4 @@
-update=7/5/2016 7:43:21 PM
+update=7/5/2016 9:19:01 PM
 version=1
 last_client=kicad
 [pcbnew]
@@ -72,3 +72,4 @@ LibName30=library/TEENSY_3.2
 LibName31=library/OLED_MODULE
 LibName32=library/touch_pad
 LibName33=library/sn74lvc
+LibName34=library/tca9546a
