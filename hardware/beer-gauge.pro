@@ -1,4 +1,4 @@
-update=6/19/2016 5:28:05 PM
+update=7/5/2016 7:43:21 PM
 version=1
 last_client=kicad
 [pcbnew]
@@ -23,6 +23,18 @@ ModuleOutlineThickness=0.150000000000
 [cvpcb]
 version=1
 NetIExt=net
+[general]
+version=1
+[schematic_editor]
+version=1
+PageLayoutDescrFile=
+PlotDirectoryName=
+SubpartIdSeparator=0
+SubpartFirstId=65
+NetFmtName=
+SpiceForceRefPrefix=0
+SpiceUseNetNumbers=0
+LabSize=60
 [eeschema]
 version=1
 LibDir=library
@@ -59,15 +71,4 @@ LibName29=valves
 LibName30=library/TEENSY_3.2
 LibName31=library/OLED_MODULE
 LibName32=library/touch_pad
-[general]
-version=1
-[schematic_editor]
-version=1
-PageLayoutDescrFile=
-PlotDirectoryName=
-SubpartIdSeparator=0
-SubpartFirstId=65
-NetFmtName=
-SpiceForceRefPrefix=0
-SpiceUseNetNumbers=0
-LabSize=60
+LibName33=library/sn74lvc

@@ -31,6 +31,7 @@ LIBS:valves
 LIBS:TEENSY_3.2
 LIBS:OLED_MODULE
 LIBS:touch_pad
+LIBS:sn74lvc
 LIBS:beer-gauge-cache
 EELAYER 25 0
 EELAYER END
