@@ -1387,4 +1387,6 @@ F 3 "" H 5100 6500 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 Connection ~ 5100 6600
+Text Notes 6100 5850 2    60   ~ 0
+I2C ADDRESS 0x70
 $EndSCHEMATC

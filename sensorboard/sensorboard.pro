@@ -1,4 +1,4 @@
-update=7/9/2016 8:13:58 AM
+update=7/9/2016 9:14:25 AM
 version=1
 last_client=kicad
 [pcbnew]
@@ -23,19 +23,11 @@ ModuleOutlineThickness=0.150000000000
 [cvpcb]
 version=1
 NetIExt=net
-[schematic_editor]
+[general]
 version=1
-PageLayoutDescrFile=
-PlotDirectoryName=
-SubpartIdSeparator=0
-SubpartFirstId=65
-NetFmtName=
-SpiceForceRefPrefix=0
-SpiceUseNetNumbers=0
-LabSize=60
 [eeschema]
 version=1
-LibDir=library
+LibDir=../hardware/library
 [eeschema/libraries]
 LibName1=power
 LibName2=device
@@ -66,10 +58,6 @@ LibName26=opto
 LibName27=atmel
 LibName28=contrib
 LibName29=valves
-LibName30=library/TEENSY_3.2
-LibName31=library/OLED_MODULE
-LibName32=library/touch_pad
-LibName33=library/sn74lvc
-LibName34=library/tca9546a
-[general]
-version=1
+LibName30=E:/Projects/beer-gauge/hardware/library/TEENSY_3.2
+LibName31=mcp9808
+LibName32=abpmann030pg2a3
