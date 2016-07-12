@@ -1,14 +1,15 @@
 /*
-  ADS1234.h - Library for reading from a ADS1232 or ADS1234 24-bit ADC.
+  ADS1232.h - Library for reading from a ADS1232 24-bit ADC.
   Created by Jeffrey M. Kubascik, June 28, 2016.
   Released into the public domain.
 */
-#ifndef ADS1234_h
-#define ADS1234_h
+#ifndef ADS1232_h
+#define ADS1232_h
 
-#include "Arduino.h"
+#include <Arduino.h>
+#include <SPI.h>
 
-class ADS1234
+class ADS1232
 {
   public:
     typedef enum
@@ -29,11 +30,10 @@ class ADS1234
     {
       AIN1 = 0,
       AIN2,
-      AIN3,
-      AIN4
+      TEMP
     } Channel;
 
-    ADS1234(int pin_dout, int pin_sclk, int pin_pdwn, int pin_gain0, int pin_gain1, int pin_speed, int pin_a0, int pin_a1);
+    ADS1232(int pin_sck, int pin_dout, int pin_pdwn, int pin_gain0, int pin_gain1, int pin_speed, int pin_a0, int pin_temp);
 
     void init(Gain gain = GAIN1, Speed speed = SLOW, Channel channel = AIN1);
 
@@ -48,15 +48,17 @@ class ADS1234
     int32_t read(void);
 
   private:
+    int _pin_cs;
     int _pin_dout;
-    int _pin_sclk;
     int _pin_pdwn;
     int _pin_gain0;
     int _pin_gain1;
     int _pin_speed;
     int _pin_a0;
-    int _pin_a1;
+    int _pin_temp;
+
+    SPISettings spi_settings;
 };
 
-#endif /* #ifndef ADS1234_h */
+#endif /* #ifndef ADS1232_h */
 
